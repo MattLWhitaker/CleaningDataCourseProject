@@ -1,0 +1,4 @@
+test/Inertial Signals/body_acc_x_test.txt
+test/Inertial Signals/body_acc_y_test.txt
+*.txt
+README.html
