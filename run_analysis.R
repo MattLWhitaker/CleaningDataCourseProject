@@ -1,25 +1,27 @@
+## Course Project for Getting and Cleaning Data
+##  Matt Whitaker 2014
 ## data sources
 ##test data
-TEST_FOLDER <- "./test"
-TEST_MEASUREMENT_FILE <- "X_test.txt"
-TEST_SUBJECT_FILE <- "subject_test.txt"
-TEST_ACTIVITY_FILE <- "y_test.txt"
+TEST_FOLDER <- "./test"                 ## Folder relative to the current folder holding the test data
+TEST_MEASUREMENT_FILE <- "X_test.txt"   ## File containing the test measurements
+TEST_SUBJECT_FILE <- "subject_test.txt" ## File containing the subjects for each test
+TEST_ACTIVITY_FILE <- "y_test.txt"      ## File containing the the activity code for each test
 
 ##train data
-TRAIN_FOLDER <- "./train"
-TRAIN_MEASUREMENT_FILE <- "X_train.txt"
-TRAIN_SUBJECT_FILE <- "subject_train.txt"
-TRAIN_ACTIVITY_FILE <- "y_train.txt"
+TRAIN_FOLDER <- "./train"               ## Folder relative to the current folder holding the training data
+TRAIN_MEASUREMENT_FILE <- "X_train.txt" ## File containing the training measurements
+TRAIN_SUBJECT_FILE <-"subject_train.txt"## File containing the subjects for each training test
+TRAIN_ACTIVITY_FILE <- "y_train.txt"    ## File containing the the activity code for each training test
 
 ##common data
-COMMON_DATA_FOLDER <- "."
-FEATURES_KEY_FILE  <- "features.txt"
-ACTIVITY_KEY_FILE <- "activity_labels.txt"
-EXTRACT_MEASURE <- c("mean()","std()")
+COMMON_DATA_FOLDER <- "."               ## Folder containing the common data.
+FEATURES_KEY_FILE  <- "features.txt"    ## File containing the description of the measurement fields
+ACTIVITY_KEY_FILE <- "activity_labels.txt" ##File containing the key to the activity codes
+EXTRACT_MEASURE <- c("mean()","std()")  ## Vector measurements to be extracted from the data file
 
 ## cleaned data storage
-SAVE_DATA_FOLDER <- "./clean_data"
-CLEAN_DATA_FILE <- "COURSE_PROJECT_TIDY_DATA.TXT"
+SAVE_DATA_FOLDER <- "./clean_data"      ## Folder in which to store the tidy data set
+CLEAN_DATA_FILE <- "COURSE_PROJECT_TIDY_DATA.TXT" ##File name for tidy data set
 
 
 ##SUBROUINES 
