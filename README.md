@@ -49,3 +49,23 @@ This section lists the folders and file names to run the script. Edit these if t
 #### Subroutines
 
 Normally these would be placed in a separate source code file but for ease of review are included here.
+
+    *getMeasureIndices(featureKey,measures): Uses grep to find all the indices in the featureKey that contain exact matches for the desired                 measures in the the vector of measurement strings (measure)
+    
+    *getDataTable(dataFolder,measureFile,subjectFile,actFile,extractIdx,measureNames): Open the measurement, activity and subject files for a group of measurements. Only the columns in extractIdx are kept in the data table. The subject and activity codes are column bound to the data. The measureNames are used as variables names for the measurement columns.
+
+#### Main Script
+This is where the actual extraction and tidying of the data occurs.
+1. The feature key file is read in to a data table and is passed tot he getMeasureIndices routines to extract the indices of the measurements containing "mean()" or "std()". The measurement names of the desired indices are extracted from the mesurement data table to be used as column names.
+
+2. The activity lookup data table is read from the activity key file.
+
+3. The test data set is loaded using the getDataTable subroutine.
+
+4. The training data set is loaded using the getDataTable subroutine.
+
+5. The data sets in 3 and 4 are row bound to gather them together in one data set and merged with the activity code lookup table to provide human readable names on the activities. The activity nmmes nd subject_id's were converted to factors.
+
+6. Using aggregate function the data was aggregated by all the combinations of subject and activities and the mean taken of each comination.
+
+7. The data was saved to a comma delimited text file.
