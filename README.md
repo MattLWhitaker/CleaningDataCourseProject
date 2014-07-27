@@ -69,3 +69,7 @@ This is where the actual extraction and tidying of the data occurs.
 6. Using aggregate function the data was aggregated by all the combinations of subject and activities and the mean taken of each comination.
 
 7. The data was saved to a comma delimited text file.
+
+#### Code Book
+
+The code book for the tideied data can found in [Course project Code Book.txt](https://github.com/MattLWhitaker/CleaningDataCourseProject/blob/master/Course%20Project%20Code%20Book.txt)
